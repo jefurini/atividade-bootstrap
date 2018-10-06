@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body {
+    font-family: "Montserrat";
+}
+
+header{
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.7) 40%,rgba(0,0,0,0) 100%), url(imagens/bg-hero.jpg);
+    padding: 50px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.header-topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-topo a {
+    color: white;
+}
+
+.botao-outline {
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.header-topo .botao-outline {
+    margin-left: 10px;
+}
+
+.header-conteudo {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 120px;
+    padding-left: 35%;
+    padding-right: 35%;
+}
+
+.header-conteudo h1 {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.header-conteudo h3 {
+    color: white;
+    margin-bottom: 30px;
+}
+
+.botao-solido {
+    color: white;
+    background-color: #ff4e50;
+    border-radius: 40px;
+    padding: 10px 30px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+@media (max-width: 500px) {
+    .header-conteudo {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 20px;
+    }
+    
+    .header-topo {
+        flex-direction: column;
+    }
+    
+    .header-topo .logo {
+        order: 2;
+    }
+    
+    .header-topo nav {
+        order: 1;
+        margin-bottom: 80px;
+    }
+    
+    
+}
